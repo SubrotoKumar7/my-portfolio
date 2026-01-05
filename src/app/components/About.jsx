@@ -1,16 +1,16 @@
-import Link from "next/link";
+import Image from "next/image";
 
 export default function About() {
   return (
     <section id="about">
       <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
         {/* Main Content Layout */}
-        <section className="flex-1 w-full max-w-[1280px] mx-auto px-4 md:px-10 py-10 md:py-16">
-          <div className="max-w-[1000px] mx-auto flex flex-col gap-12">
+        <section className="flex-1 w-full max-w-7xl mx-auto px-4 md:px-10 py-10 md:py-16">
+          <div className="max-w-250 mx-auto flex flex-col gap-12">
             {/* Section Header */}
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-2 text-primary font-bold uppercase tracking-wider text-sm">
-                <span className="w-8 h-[2px] bg-primary rounded-full"></span>
+                <span className="w-8 h-0.5 bg-primary rounded-full"></span>
                 <span>Discover</span>
               </div>
               <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">About Me</h1>
@@ -19,10 +19,10 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
               {/* Visual Column (Image) */}
               <div className="md:col-span-5 lg:col-span-4 order-1 md:order-2">
-                <div className="group relative aspect-[3/4] w-full max-w-sm mx-auto md:max-w-none rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 ring-1 ring-white/10">
+                <div className="group relative aspect-3/4 w-full max-w-sm mx-auto md:max-w-none rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 ring-1 ring-white/10">
                   {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent z-10 opacity-60"></div>
-                  <img alt="Developer Portrait" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="/me.png"/>
+                  <div className="absolute inset-0 bg-linear-to-t from-background-dark/90 via-transparent to-transparent z-10 opacity-60"></div>
+                  <Image width="100" height="100" alt="Developer Portrait" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" src="/me.png"/>
                   {/* Floating Badge */}
                   <div className="absolute bottom-4 left-4 right-4 z-20">
                     <div className="bg-surface-dark/90 backdrop-blur-sm border border-white/10 p-3 rounded-xl flex items-center gap-3 shadow-lg">
