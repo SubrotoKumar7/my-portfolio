@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function About() {
   return (
     <section id="about">
@@ -43,7 +45,7 @@ export default function About() {
                   </h2>
                   <div className="space-y-4 text-base md:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
                     <p>
-                      Hello! I&apos;m a passionate <strong className="text-primary font-semibold">MERN Stack Developer</strong> based in San Francisco. My journey into the world of tech began 5 years ago when I decided to customize a simple WordPress theme and accidentally broke the entire site. That moment of panic turned into a deep curiosity for how things work under the hood.
+                      Hello! I&apos;m a passionate <strong className="text-primary font-semibold">MERN Stack Developer</strong> based in Bangladesh. My Name is Subroto Kumar. I am a passionate and dedicated MERN Stack Web Developer.
                     </p>
                     <p>
                       Fast forward to today, I specialize in building robust, scalable web applications using MongoDB, Express, React, and Node.js. I thrive on solving complex problems and turning abstract ideas into functional, user-centric digital experiences.
@@ -89,9 +91,9 @@ export default function About() {
                 </div>
                 {/* Actions */}
                 <div className="flex flex-wrap gap-4 pt-2">
-                  <button className="flex items-center justify-center h-12 px-6 rounded-lg bg-primary text-white font-bold text-sm tracking-wide hover:bg-primary/90 transition-all shadow-lg shadow-primary/25">
+                  <a href="#contact" className="flex items-center justify-center h-12 px-6 rounded-lg bg-primary text-white font-bold text-sm tracking-wide hover:bg-primary/90 transition-all shadow-lg shadow-primary/25">
                     Contact Me
-                  </button>
+                  </a>
                   <button className="flex items-center justify-center h-12 px-6 rounded-lg bg-surface-dark border border-gray-700 text-white font-bold text-sm tracking-wide hover:bg-gray-800 hover:border-gray-600 transition-all">
                     <span className="mr-2 material-symbols-outlined text-[20px]">description</span>
                     Download CV
