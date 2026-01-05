@@ -108,7 +108,7 @@ export default function About() {
                 <div className="mb-2 h-10 w-10 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                   <span className="material-symbols-outlined">schedule</span>
                 </div>
-                <p className="text-4xl font-extrabold text-white tracking-tight">5+</p>
+                <p className="text-4xl font-extrabold text-white tracking-tight">1+</p>
                 <p className="text-sm font-medium text-gray-400">Years of Experience</p>
               </div>
               {/* Stat Card 2 */}
@@ -116,7 +116,7 @@ export default function About() {
                 <div className="mb-2 h-10 w-10 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                   <span className="material-symbols-outlined">folder_managed</span>
                 </div>
-                <p className="text-4xl font-extrabold text-white tracking-tight">20+</p>
+                <p className="text-4xl font-extrabold text-white tracking-tight">7+</p>
                 <p className="text-sm font-medium text-gray-400">Projects Completed</p>
               </div>
               {/* Stat Card 3 */}
@@ -124,7 +124,7 @@ export default function About() {
                 <div className="mb-2 h-10 w-10 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                   <span className="material-symbols-outlined">local_cafe</span>
                 </div>
-                <p className="text-4xl font-extrabold text-white tracking-tight">1.5k+</p>
+                <p className="text-4xl font-extrabold text-white tracking-tight">1k+</p>
                 <p className="text-sm font-medium text-gray-400">Cups of Coffee</p>
               </div>
             </div>
