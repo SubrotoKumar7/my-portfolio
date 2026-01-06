@@ -1,6 +1,10 @@
+'use client';
+
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Projects() {
+  const [activeFilter, setActiveFilter] = useState('All Projects');
   return (
     <section id="project">
       <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
@@ -22,33 +26,69 @@ export default function Projects() {
               </div>
               {/* Filter Chips */}
               <div className="flex gap-3 p-3 flex-wrap pr-4 pb-8">
-                <button className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary pl-4 pr-4 transition-transform hover:scale-105 active:scale-95">
-                  <p className="text-white text-sm font-medium leading-normal">
+                <button 
+                  onClick={() => setActiveFilter('All Projects')}
+                  className={`flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full pl-4 pr-4 transition-all ${
+                    activeFilter === 'All Projects'
+                      ? 'bg-primary text-white hover:scale-105 active:scale-95'
+                      : 'bg-slate-200 dark:bg-[#283039] text-slate-700 dark:text-white hover:bg-slate-300 dark:hover:bg-[#353f4b]'
+                  }`}
+                >
+                  <p className="text-sm font-medium leading-normal">
                     All Projects
                   </p>
                 </button>
-                <button className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#283039] hover:bg-slate-300 dark:hover:bg-[#353f4b] pl-4 pr-4 transition-colors">
-                  <p className="text-slate-700 dark:text-white text-sm font-medium leading-normal">
+                <button 
+                  onClick={() => setActiveFilter('React')}
+                  className={`flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full pl-4 pr-4 transition-all ${
+                    activeFilter === 'React'
+                      ? 'bg-primary text-white hover:scale-105 active:scale-95'
+                      : 'bg-slate-200 dark:bg-[#283039] text-slate-700 dark:text-white hover:bg-slate-300 dark:hover:bg-[#353f4b]'
+                  }`}
+                >
+                  <p className="text-sm font-medium leading-normal">
                     React
                   </p>
                 </button>
-                <button className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#283039] hover:bg-slate-300 dark:hover:bg-[#353f4b] pl-4 pr-4 transition-colors">
-                  <p className="text-slate-700 dark:text-white text-sm font-medium leading-normal">
+                <button 
+                  onClick={() => setActiveFilter('Express')}
+                  className={`flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full pl-4 pr-4 transition-all ${
+                    activeFilter === 'Express'
+                      ? 'bg-primary text-white hover:scale-105 active:scale-95'
+                      : 'bg-slate-200 dark:bg-[#283039] text-slate-700 dark:text-white hover:bg-slate-300 dark:hover:bg-[#353f4b]'
+                  }`}
+                >
+                  <p className="text-sm font-medium leading-normal">
                     Express
                   </p>
                 </button>
-                <button className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#283039] hover:bg-slate-300 dark:hover:bg-[#353f4b] pl-4 pr-4 transition-colors">
-                  <p className="text-slate-700 dark:text-white text-sm font-medium leading-normal">
+                <button 
+                  onClick={() => setActiveFilter('MongoDB')}
+                  className={`flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full pl-4 pr-4 transition-all ${
+                    activeFilter === 'MongoDB'
+                      ? 'bg-primary text-white hover:scale-105 active:scale-95'
+                      : 'bg-slate-200 dark:bg-[#283039] text-slate-700 dark:text-white hover:bg-slate-300 dark:hover:bg-[#353f4b]'
+                  }`}
+                >
+                  <p className="text-sm font-medium leading-normal">
                     MongoDB
                   </p>
                 </button>
-                <button className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#283039] hover:bg-slate-300 dark:hover:bg-[#353f4b] pl-4 pr-4 transition-colors">
-                  <p className="text-slate-700 dark:text-white text-sm font-medium leading-normal">
+                <button 
+                  onClick={() => setActiveFilter('NextJS')}
+                  className={`flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full pl-4 pr-4 transition-all ${
+                    activeFilter === 'NextJS'
+                      ? 'bg-primary text-white hover:scale-105 active:scale-95'
+                      : 'bg-slate-200 dark:bg-[#283039] text-slate-700 dark:text-white hover:bg-slate-300 dark:hover:bg-[#353f4b]'
+                  }`}
+                >
+                  <p className="text-sm font-medium leading-normal">
                     NextJS
                   </p>
                 </button>
               </div>
               {/* Featured Hero Project */}
+              {(activeFilter === 'All Projects' || activeFilter === 'React' || activeFilter === 'Express' || activeFilter === 'MongoDB') && (
               <div className="@container mb-10">
                 <div className="flex flex-col gap-6 p-6 rounded-2xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm @[480px]:gap-8 @[864px]:flex-row group transition-all hover:shadow-md hover:border-primary/30">
                   <div
@@ -124,13 +164,31 @@ export default function Projects() {
                   </div>
                 </div>
               </div>
+              )}
               {/* Project Grid Headline */}
               <h2 className="tracking-tight text-[28px] font-bold leading-tight px-4 text-left pb-6 pt-2">
                 More Projects
               </h2>
               {/* Projects Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 px-4">
-                {/* Project Card 1 */}
+                {/* No Projects Fallback Message */}
+                {activeFilter === 'NextJS' && (
+                  <div className="col-span-full flex flex-col items-center justify-center py-16 px-4">
+                    <div className="flex size-20 items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 mb-6">
+                      <span className="material-symbols-outlined text-5xl text-slate-400 dark:text-slate-500">
+                        search_off
+                      </span>
+                    </div>
+                    <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
+                      No Projects Found
+                    </h3>
+                    <p className="text-slate-500 dark:text-slate-400 text-center max-w-md">
+                      No projects found with <span className="font-semibold text-primary">{activeFilter}</span> technology. Check back later for updates!
+                    </p>
+                  </div>
+                )}
+                {/* Project Card 1 - ZapShift */}
+                {(activeFilter === 'All Projects' || activeFilter === 'React' || activeFilter === 'Express' || activeFilter === 'MongoDB') && (
                 <div className="group flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-black/50 hover:border-primary/30">
                   <div className="relative aspect-video w-full overflow-hidden bg-slate-200">
                     <div
@@ -190,7 +248,9 @@ export default function Projects() {
                     </div>
                   </div>
                 </div>
-                {/* Project Card 2 */}
+                )}
+                {/* Project Card 2 - Nestora */}
+                {(activeFilter === 'All Projects' || activeFilter === 'React' || activeFilter === 'Express' || activeFilter === 'MongoDB') && (
                 <div className="group flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-black/50 hover:border-primary/30">
                   <div className="relative aspect-video w-full overflow-hidden bg-slate-200">
                     <div
@@ -252,7 +312,9 @@ export default function Projects() {
                     </div>
                   </div>
                 </div>
-                {/* Project Card 3 */}
+                )}
+                {/* Project Card 3 - CozyPaw */}
+                {(activeFilter === 'All Projects' || activeFilter === 'React') && (
                 <div className="group flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-black/50 hover:border-primary/30">
                   <div className="relative aspect-video w-full overflow-hidden bg-slate-200">
                     <div
@@ -307,7 +369,9 @@ export default function Projects() {
                     </div>
                   </div>
                 </div>
-                {/* Project Card 4 */}
+                )}
+                {/* Project Card 4 - GetSoft */}
+                {(activeFilter === 'All Projects' || activeFilter === 'React') && (
                 <div className="group flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-black/50 hover:border-primary/30">
                   <div className="relative aspect-video w-full overflow-hidden bg-slate-200">
                     <div
@@ -359,6 +423,7 @@ export default function Projects() {
                     </div>
                   </div>
                 </div>
+                )}
               </div>
               {/* CTA Section */}
               <div className="mt-20 flex flex-col items-center justify-center gap-6 rounded-2xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 p-10 text-center">
