@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 export default function Projects() {
   return (
     <section id="project">
       <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
         <section className="layout-container flex h-full grow flex-col">
           <div className="px-6 lg:px-40 flex flex-1 justify-center py-5">
-            <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div className="layout-content-container flex flex-col max-w-240 flex-1">
               {/* Page Heading */}
               <div className="flex flex-wrap justify-between gap-3 p-4 pt-8">
                 <div className="flex min-w-72 flex-col gap-3">
@@ -36,36 +38,38 @@ export default function Projects() {
               {/* Featured Hero Project */}
               <div className="@container mb-10">
                 <div className="flex flex-col gap-6 p-6 rounded-2xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm @[480px]:gap-8 @[864px]:flex-row group transition-all hover:shadow-md hover:border-primary/30">
-                  <div className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl @[480px]:h-auto @[480px]:min-w-[400px] @[864px]:w-1/2 overflow-hidden relative" style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuAU75iZ6OFG6R116l2UzSShWazj4697JLlhMcQ-PvC_-vmo2ptG7TE4DlF-yBnYdvDD8Kw8ZhpgfrJi2lamryFZrd2vfq_7fEhtTy1Qre6zXvEge8CpyAZW5VqIgMwE-aSpmKwwC2qxGTtcO985q080kASODdQ6vfalXrPMtjsidIVRhi_Vy-Bh3QgNiQNGuJQjYq4X3raLW_gsGUGqCg6moXQuGrK-mH2ncpTYnJRY4PkaiPoFjyMmsn65WC6dG3kJB_ZrscG-o47S")'}}>
+                  <div className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl @[480px]:h-auto @[480px]:min-w-100 @[864px]:w-1/2 overflow-hidden relative" style={{backgroundImage: `url(./article-arena.png)`}}>
                     <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
                   </div>
-                  <div className="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-6 justify-center flex-1">
+                  <div className="flex flex-col gap-6 @[480px]:min-w-100 @[480px]:gap-6 justify-center flex-1">
                     <div className="flex flex-col gap-3 text-left">
                       <div className="flex items-center gap-2">
                         <span className="px-2 py-1 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400 text-xs font-bold uppercase tracking-wider">Featured Project</span>
                       </div>
                       <h1 className="text-3xl font-black leading-tight tracking-tight">
-                        E-Commerce Analytics Dashboard
+                        Article Arena
                       </h1>
                       <div className="flex flex-wrap gap-2 my-1">
                         <span className="px-2 py-0.5 rounded text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300">React</span>
-                        <span className="px-2 py-0.5 rounded text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300">Redux Toolkit</span>
+                        <span className="px-2 py-0.5 rounded text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300">Firebase</span>
                         <span className="px-2 py-0.5 rounded text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300">Tailwind</span>
+                        <span className="px-2 py-0.5 rounded text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300">Stripe</span>
+                        <span className="px-2 py-0.5 rounded text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300">Express</span>
+                        <span className="px-2 py-0.5 rounded text-xs font-medium bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300">MongoDB</span>
                       </div>
                       <p className="text-slate-600 dark:text-slate-300 text-base font-normal leading-relaxed">
-                        A comprehensive admin panel for managing inventory, tracking real-time orders, and visualizing sales data. 
-                        Features include dark mode, drag-and-drop kanban board, and rich data visualization charts.
+                        Article Arena is an online article writing contest platform where contest creators can host contests, users can participate by submitting their articles, and winners are declared by contest creators. The platform supports three types of roles: Admin, Creators, and Users, each with a dedicated dashboard and functionalities
                       </p>
                     </div>
                     <div className="flex flex-wrap gap-3 mt-2">
-                      <button className="flex items-center justify-center gap-2 rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 hover:bg-blue-600 transition-all active:scale-95">
+                      <Link target="_blank" href={'https://article-arena.web.app'} className="flex items-center justify-center gap-2 rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 hover:bg-blue-600 transition-all active:scale-95">
                         <span className="material-symbols-outlined text-[20px]">rocket_launch</span>
                         <span>Live Demo</span>
-                      </button>
-                      <button className="flex items-center justify-center gap-2 rounded-lg h-10 px-6 bg-transparent border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white text-sm font-bold hover:bg-slate-100 dark:hover:bg-slate-800 transition-all active:scale-95">
+                      </Link>
+                      <Link target="_blank" href={'https://github.com/SubrotoKumar7/article-arena-client'} className="flex items-center justify-center gap-2 rounded-lg h-10 px-6 bg-transparent border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white text-sm font-bold hover:bg-slate-100 dark:hover:bg-slate-800 transition-all active:scale-95">
                         <span className="material-symbols-outlined text-[20px]">code</span>
                         <span>GitHub</span>
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -77,26 +81,29 @@ export default function Projects() {
                 {/* Project Card 1 */}
                 <div className="group flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-black/50 hover:border-primary/30">
                   <div className="relative aspect-video w-full overflow-hidden bg-slate-200">
-                    <div className="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuClfm3d8jlUriGGBD9UQnamZsZFNZqlOlzqnyMXzkzeo8WXQp8avJBCBJAgjSXYBoNOkIJDuLhb1AL8ftMT7LqnNIREm-ktMOzbffXLCcRHgjS0o9smifFGlF93Oko0kw-_0a_E5eN_eMFVA9y_vQYPVXf7IZZWQHlO3J5HZPc1PUgeQzeYYAEihO8wsK0v3fMQplXyXJhb5MQlb4b6Sv4dldFElI3tVAVQdvK1FC4yUx4k5VmDZQ2J-q_whr9sEhKt3J36WBNQN3Ha")'}}>
+                    <div className="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style={{backgroundImage: `url(./zap-shift.png)`}}>
                     </div>
                     <div className="absolute bottom-2 left-2 flex flex-wrap gap-1">
-                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">MERN</span>
-                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">Socket.io</span>
+                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">Express</span>
+                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">MongoDB</span>
+                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">Firebase</span>
+                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">Stripe</span>
+                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">React</span>
                     </div>
                   </div>
                   <div className="flex flex-1 flex-col p-5">
                     <div className="flex items-start justify-between">
-                      <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">SocialConnect</h3>
+                      <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">ZapShift</h3>
                     </div>
                     <p className="mt-2 line-clamp-2 text-sm text-slate-500 dark:text-slate-400">
-                      A full-stack social media application with real-time messaging, post interactions, and user authentication using JWT.
+                      A full-stack parcel delivery application with real-time parcel tracking, user dashboard, and user authentication using JWT.
                     </p>
                     <div className="mt-auto flex gap-3 pt-5">
-                      <a className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-primary/10 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white" href="#">
+                      <a target="_blank" className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-primary/10 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white" href="https://zap-shift-e9bf3.web.app/">
                         <span className="material-symbols-outlined text-[18px]">visibility</span>
                         Demo
                       </a>
-                      <a className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-transparent py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-300 transition-colors hover:bg-slate-100 dark:hover:bg-slate-800" href="#">
+                      <a target="_blank" className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-transparent py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-300 transition-colors hover:bg-slate-100 dark:hover:bg-slate-800" href="https://github.com/SubrotoKumar7/Zap-Shift-Client">
                         <span className="material-symbols-outlined text-[18px]">code</span>
                         Code
                       </a>
@@ -106,26 +113,29 @@ export default function Projects() {
                 {/* Project Card 2 */}
                 <div className="group flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-black/50 hover:border-primary/30">
                   <div className="relative aspect-video w-full overflow-hidden bg-slate-200">
-                    <div className="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuCrCMXM05cYdWgX0JZX_SW_IKvU-qEBYvb0LnQijuj-PoCsAPuW6QzR9SrERPaNpjhMzBoPg829NqsZJzM3I7UFl2QKLMpdKJDhRddzwZz9CNAUsMBJAmSVhhVVWy2pYfAMDyXgmGOOKB6YzhIcj7Yw9kEIita9yzMJVoCeuwSVI-yWkxiiCABGeyBiavi9hzfBUDMKIprHtpN6IHaKfoiAZpVu6CgoTPUAbes34VNSq_3nNbWi6Nx85Sda1AIM7egaPE-LDabN7tYO")'}}>
+                    <div className="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style={{backgroundImage: `url(./nestora.png)`}}>
                     </div>
                     <div className="absolute bottom-2 left-2 flex flex-wrap gap-1">
-                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">Next.js</span>
-                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">Prisma</span>
+                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">React</span>
+                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">Tailwind CSS</span>
+                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">Firebase</span>
+                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">Express</span>
+                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">MongoDB</span>
                     </div>
                   </div>
                   <div className="flex flex-1 flex-col p-5">
                     <div className="flex items-start justify-between">
-                      <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">TaskFlow Pro</h3>
+                      <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">Nestora</h3>
                     </div>
                     <p className="mt-2 line-clamp-2 text-sm text-slate-500 dark:text-slate-400">
-                      Productivity tool for agile teams. Create boards, drag tasks, and collaborate. Built with Next.js 14 and Server Actions.
+                      Nestora is a real estate web application built using modern technologies like React, TailwindCSS, Firebase, and more. The project is designed to offer a seamless experience for users to explore properties, view details, and contact agents.
                     </p>
                     <div className="mt-auto flex gap-3 pt-5">
-                      <a className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-primary/10 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white" href="#">
+                      <a target="_blank" className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-primary/10 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white" href="https://nestora-2c373.web.app">
                         <span className="material-symbols-outlined text-[18px]">visibility</span>
                         Demo
                       </a>
-                      <a className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-transparent py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-300 transition-colors hover:bg-slate-100 dark:hover:bg-slate-800" href="#">
+                      <a target="_blank" className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-transparent py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-300 transition-colors hover:bg-slate-100 dark:hover:bg-slate-800" href="https://github.com/SubrotoKumar7/Nestora-Client">
                         <span className="material-symbols-outlined text-[18px]">code</span>
                         Code
                       </a>
@@ -135,26 +145,26 @@ export default function Projects() {
                 {/* Project Card 3 */}
                 <div className="group flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-black/50 hover:border-primary/30">
                   <div className="relative aspect-video w-full overflow-hidden bg-slate-200">
-                    <div className="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuByiA-f9SIj_RRgYklaIRtAZCk-1Ng-HiLBk4JsxysGkk8lGecX5B9RubGHWuZqXzKhAK2dhyuO_svKIu_6zWmkAaarFamknC_PucLktgKzZ54jZs9u7UZYYYI-qEVqXhJfSmpY2iwukgLzXhKqqQUJJdC5H0OqiWWQA17IvcuyOW1PaDPXhrBKTfyqQErGv-e4SmIINpXqohBfqZy4JP1F3CTfd_593DhcTsE-0wfo-PVFQJCQ16hNg3vktJ6U6vGCSiKEbUNgtMc_")'}}>
+                    <div className="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style={{backgroundImage: `url(./cozy-paw.png)`}}>
                     </div>
                     <div className="absolute bottom-2 left-2 flex flex-wrap gap-1">
-                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">MongoDB</span>
-                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">Express</span>
+                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">Firebase</span>
+                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">React</span>
                     </div>
                   </div>
                   <div className="flex flex-1 flex-col p-5">
                     <div className="flex items-start justify-between">
-                      <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">EstateHunter</h3>
+                      <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">CozyPaw</h3>
                     </div>
                     <p className="mt-2 line-clamp-2 text-sm text-slate-500 dark:text-slate-400">
-                      A real-estate listing platform with advanced filtering, map integration, and user favorites. Optimized for high-volume data.
+                      CozyPaw is a one-stop platform designed to ensure your furry friends stay warm, safe, and healthy during the chilly winter months. With a focus on providing high-quality pet care services, winter-ready clothing, grooming options, and expert advice, CozyPaw makes it easier than ever for pet owners to keep their pets cozy and comfortable.
                     </p>
                     <div className="mt-auto flex gap-3 pt-5">
-                      <a className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-primary/10 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white" href="#">
+                      <a target="_blank" className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-primary/10 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white" href="https://cozy-paw-app.web.app">
                         <span className="material-symbols-outlined text-[18px]">visibility</span>
                         Demo
                       </a>
-                      <a className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-transparent py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-300 transition-colors hover:bg-slate-100 dark:hover:bg-slate-800" href="#">
+                      <a target="_blank" className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-transparent py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-300 transition-colors hover:bg-slate-100 dark:hover:bg-slate-800" href="https://github.com/SubrotoKumar7/cozy-paw">
                         <span className="material-symbols-outlined text-[18px]">code</span>
                         Code
                       </a>
@@ -164,26 +174,26 @@ export default function Projects() {
                 {/* Project Card 4 */}
                 <div className="group flex flex-col overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-800 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-black/50 hover:border-primary/30">
                   <div className="relative aspect-video w-full overflow-hidden bg-slate-200">
-                    <div className="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuA_P0d7HzoyZNNUyyON7SkgVn04jt1dvfDyxUjmHoth0H_FtErAKWdWx_7USr9JaWOKLZ-GFLl4DBFXTaSn6UbaXBnMSMJi5WRDsBbvXPnS_WJdDvvyVLthqRbFQVQngHVBYRt5sWJKbtTfzqaVn47L3ThIgIaGxQPuIxo0AAWt6st0vaSxVOt4LXMQUDdAkUIsiJAyxV46Whp8jexUjOJk5uujQFYCIZOAmUqRrHXqnqS2tT7L6N9UmyH4-cNgQG0ia2C2gXPeRvhW")'}}>
+                    <div className="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style={{backgroundImage: `url(./getsoft.png)`}}>
                     </div>
                     <div className="absolute bottom-2 left-2 flex flex-wrap gap-1">
-                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">OpenAI API</span>
+                      <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">Tailwind CSS</span>
                       <span className="rounded bg-black/70 backdrop-blur-sm px-2 py-1 text-[10px] font-bold uppercase text-white">React</span>
                     </div>
                   </div>
                   <div className="flex flex-1 flex-col p-5">
                     <div className="flex items-start justify-between">
-                      <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">AI Content Assistant</h3>
+                      <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">GetSoft</h3>
                     </div>
                     <p className="mt-2 line-clamp-2 text-sm text-slate-500 dark:text-slate-400">
-                      SaaS boilerplate for AI generation. Users can generate blog posts and images. Includes Stripe subscription integration.
+                      Welcome to GetSoft, a React-based app discovery platform, inspired by the design and functionality of the Google Play Store. Explore, search, and discover applications built using modern web technologies.
                     </p>
                     <div className="mt-auto flex gap-3 pt-5">
-                      <a className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-primary/10 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white" href="#">
+                      <a target="_blank" className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-primary/10 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-white" href="https://getsoft.pages.dev">
                         <span className="material-symbols-outlined text-[18px]">visibility</span>
                         Demo
                       </a>
-                      <a className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-transparent py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-300 transition-colors hover:bg-slate-100 dark:hover:bg-slate-800" href="#">
+                      <a target="_blank" className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-transparent py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-300 transition-colors hover:bg-slate-100 dark:hover:bg-slate-800" href="https://github.com/SubrotoKumar7/GetSoft">
                         <span className="material-symbols-outlined text-[18px]">code</span>
                         Code
                       </a>
@@ -203,9 +213,9 @@ export default function Projects() {
                   </p>
                 </div>
                 <div className="flex gap-4">
-                  <button className="flex h-10 items-center justify-center gap-2 rounded-lg bg-primary px-6 text-sm font-bold text-white transition-all hover:bg-blue-600 active:scale-95">
+                  <a href="#contact" className="flex h-10 items-center justify-center gap-2 rounded-lg bg-primary px-6 text-sm font-bold text-white transition-all hover:bg-blue-600 active:scale-95">
                     Contact Me
-                  </button>
+                  </a>
                   <button className="flex h-10 items-center justify-center gap-2 rounded-lg border border-slate-300 dark:border-slate-600 px-6 text-sm font-bold text-slate-900 dark:text-white transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 active:scale-95">
                     View Resume
                   </button>
