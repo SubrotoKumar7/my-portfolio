@@ -1,4 +1,5 @@
 import './globals.css';
+import Navbar from './components/Navbar';
 
 export const metadata = {
   title: 'Subroto Kumar',
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300 overflow-x-hidden">
+        <Navbar />
         {children}
       </body>
     </html>

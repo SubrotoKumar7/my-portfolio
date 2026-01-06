@@ -1,40 +1,6 @@
 export default function Hero() {
   return (
     <section id="hero">
-      {/* Top Navigation */}
-      <nav className="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            {/* Logo */}
-            <div className="flex items-center gap-2">
-              <div className="flex items-center justify-center size-8 rounded bg-primary/20 text-primary">
-                <span className="material-symbols-outlined text-xl">terminal</span>
-              </div>
-              <span className="text-lg font-bold tracking-tight">Subroto</span>
-            </div>
-            {/* Desktop Links */}
-            <div className="hidden md:flex items-center gap-8">
-              <a className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#about">About</a>
-              <a className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#project">Projects</a>
-              <a className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#skills">Skills</a>
-              <a className="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#contact">Contact</a>
-            </div>
-            {/* CTA */}
-            <div className="hidden md:flex items-center">
-              <button className="flex items-center gap-2 bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all shadow-lg shadow-primary/20">
-                <span className="material-symbols-outlined text-[18px]">download</span>
-                <span>Resume</span>
-              </button>
-            </div>
-            {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center">
-              <button className="text-gray-600 dark:text-gray-300 hover:text-white">
-                <span className="material-symbols-outlined">menu</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
       <section className="flex flex-col min-h-[calc(100vh-64px)] justify-center">
         {/* Hero Section */}
         <section className="relative pt-10 pb-20 lg:pt-20 lg:pb-24">
