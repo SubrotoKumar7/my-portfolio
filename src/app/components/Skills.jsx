@@ -22,7 +22,6 @@ export default function Skills() {
                     <span className="material-symbols-outlined text-3xl">html</span>
                   </div>
                   <h3 className="text-base font-bold text-center">HTML5</h3>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">Frontend</span>
                 </div>
                 {/* CSS3 */}
                 <div className="group flex flex-col items-center gap-3 rounded-xl border border-[#e5e7eb] dark:border-[#283039] bg-surface-light dark:bg-surface-dark p-6 transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1">
@@ -30,7 +29,6 @@ export default function Skills() {
                     <span className="material-symbols-outlined text-3xl">css</span>
                   </div>
                   <h3 className="text-base font-bold text-center">CSS3</h3>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">Frontend</span>
                 </div>
                 {/* JavaScript */}
                 <div className="group flex flex-col items-center gap-3 rounded-xl border border-[#e5e7eb] dark:border-[#283039] bg-surface-light dark:bg-surface-dark p-6 transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1">
@@ -38,7 +36,6 @@ export default function Skills() {
                     <span className="material-symbols-outlined text-3xl">javascript</span>
                   </div>
                   <h3 className="text-base font-bold text-center">JavaScript</h3>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">Frontend</span>
                 </div>
                 {/* Tailwind CSS */}
                 <div className="group flex flex-col items-center gap-3 rounded-xl border border-[#e5e7eb] dark:border-[#283039] bg-surface-light dark:bg-surface-dark p-6 transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1">
@@ -46,7 +43,6 @@ export default function Skills() {
                     <span className="material-symbols-outlined text-3xl">palette</span>
                   </div>
                   <h3 className="text-base font-bold text-center">Tailwind CSS</h3>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">Frontend</span>
                 </div>
                 {/* React */}
                 <div className="group flex flex-col items-center gap-3 rounded-xl border border-[#e5e7eb] dark:border-[#283039] bg-surface-light dark:bg-surface-dark p-6 transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1">
@@ -54,7 +50,6 @@ export default function Skills() {
                     <span className="material-symbols-outlined text-3xl">code</span>
                   </div>
                   <h3 className="text-base font-bold text-center">React</h3>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">Frontend</span>
                 </div>
                 {/* Next.js */}
                 <div className="group flex flex-col items-center gap-3 rounded-xl border border-[#e5e7eb] dark:border-[#283039] bg-surface-light dark:bg-surface-dark p-6 transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1">
@@ -62,7 +57,6 @@ export default function Skills() {
                     <span className="material-symbols-outlined text-3xl">web</span>
                   </div>
                   <h3 className="text-base font-bold text-center">Next.js</h3>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">Frontend</span>
                 </div>
                 {/* Node.js */}
                 <div className="group flex flex-col items-center gap-3 rounded-xl border border-[#e5e7eb] dark:border-[#283039] bg-surface-light dark:bg-surface-dark p-6 transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1">
@@ -70,7 +64,6 @@ export default function Skills() {
                     <span className="material-symbols-outlined text-3xl">dns</span>
                   </div>
                   <h3 className="text-base font-bold text-center">Node.js</h3>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">Backend</span>
                 </div>
                 {/* Express.js */}
                 <div className="group flex flex-col items-center gap-3 rounded-xl border border-[#e5e7eb] dark:border-[#283039] bg-surface-light dark:bg-surface-dark p-6 transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1">
@@ -78,7 +71,6 @@ export default function Skills() {
                     <span className="material-symbols-outlined text-3xl">api</span>
                   </div>
                   <h3 className="text-base font-bold text-center">Express.js</h3>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">Backend</span>
                 </div>
                 {/* MongoDB */}
                 <div className="group flex flex-col items-center gap-3 rounded-xl border border-[#e5e7eb] dark:border-[#283039] bg-surface-light dark:bg-surface-dark p-6 transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1">
@@ -86,7 +78,6 @@ export default function Skills() {
                     <span className="material-symbols-outlined text-3xl">storage</span>
                   </div>
                   <h3 className="text-base font-bold text-center">MongoDB</h3>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">Database</span>
                 </div>
                 {/* Firebase */}
                 <div className="group flex flex-col items-center gap-3 rounded-xl border border-[#e5e7eb] dark:border-[#283039] bg-surface-light dark:bg-surface-dark p-6 transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1">
@@ -94,7 +85,6 @@ export default function Skills() {
                     <span className="material-symbols-outlined text-3xl">local_fire_department</span>
                   </div>
                   <h3 className="text-base font-bold text-center">Firebase</h3>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">Database</span>
                 </div>
                 {/* Git & GitHub */}
                 <div className="group flex flex-col items-center gap-3 rounded-xl border border-[#e5e7eb] dark:border-[#283039] bg-surface-light dark:bg-surface-dark p-6 transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1">
@@ -102,7 +92,6 @@ export default function Skills() {
                     <span className="material-symbols-outlined text-3xl">source</span>
                   </div>
                   <h3 className="text-base font-bold text-center">Git &amp; GitHub</h3>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">Tools</span>
                 </div>
                 {/* Linux */}
                 <div className="group flex flex-col items-center gap-3 rounded-xl border border-[#e5e7eb] dark:border-[#283039] bg-surface-light dark:bg-surface-dark p-6 transition-all hover:border-primary hover:shadow-lg hover:-translate-y-1">
@@ -110,7 +99,6 @@ export default function Skills() {
                     <span className="material-symbols-outlined text-3xl">laptop</span>
                   </div>
                   <h3 className="text-base font-bold text-center">Linux</h3>
-                  <span className="text-xs text-slate-500 dark:text-slate-400">Tools</span>
                 </div>
               </div>
               {/* Additional Certifications or Summary */}
